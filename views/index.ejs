@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>hello world</h1>
-</body>
+<%- include("./partials/head.ejs")%>
+
+    <body>
+        <%- include("./partials/nav.ejs")%>
+            <div class="container">
+                <div class="content">
+                    <h1>Mini Message</h1>
+                    <p>Welcome to Mini Message, a simple message board application.</p>
+                    <p>Click on the "New Message" link to add a new message.</p>
+                </div>
+                <div class="message-container">
+                    <% if(!messages.length ){%>
+                        <h3 style="text-align: center;"> No messages found</h3> 
+                        <%}%>
+                     
+                    <% messages.forEach(message=>{ %>
+                        <div class="row">
+                            <div class="col-1">
+                                <div class="user">
+                                    <img src=https://img.icons8.com/?size=100&id=kDoeg22e5jUY&format=png&color=000000
+                                        alt="user profile">
+                                    <h3>
+                                        <%= message.name %>
+                                    </h3>
+                                </div>
+
+                                <div>
+                                    <span class="date" "><%= message.date.toLocaleString() %>  </span>
+                                 </div>
+                            </div>
+                        
+                        <div class=" col-2">
+                                        <img src="https://img.icons8.com/?size=100&id=a5HfLWp9KziG&format=png&color=000000"
+                                            alt="message icon">
+                                        <p>
+                                            <%= message.message %>
+                                        </p>
+                                </div>
+                            </div>
+
+
+                            <% }) %>
+                        </div>
+
+                </div>
+
+    </body>
+
 </html>

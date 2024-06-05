@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #E88D67;
+    color: #F3F7EC;
+
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+span {
+    font-size: 0.8rem;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #F3F7EC;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container .content {
+    text-align: center;
+}
+
+.container .content>* {
+    margin-bottom: 10px;
+}
+
+.container .content h1 {
+    font-size: 2rem;
+}
+
+.container .content p {
+    font-size: 0.8rem;
+}
+
+.container .message-container {
+    border: 2px solid #F3F7EC;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+
+}
+
+.container .message-container .row {
+    background-color: #F3F7EC;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    color: #006989;
+}
+
+.container .message-container img {
+    width: 25px;
+    height: 25px;
+
+}
+
+.container .message-container .row .col-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .message-container .row .col-1 .user {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+
+.container .message-container .row .col-2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+     width: 90%;
+     
+}
+.container .message-container .row .col-2 p{
+ /* overflow-x: scroll; */
+    
+    /* overflow: hidden; */
+     overflow-wrap: break-word;
+    width: 100%;
+}
+
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+}
+.form-container form {
+    width: 100%;
+    max-width: 420px;
+    padding: 25px;
+    border-radius: 6px;
+     box-shadow: 2px 2px 4px #df7e55,-2px -2px 4px #df7e55
+}
+.form-container form label{
+    display: block;
+    margin-bottom: 10px;
+}
+.form-container form input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #F3F7EC;
+    outline: none;
+}
+.form-container form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #F3F7EC;
+    outline: none;
+    resize: none;
+    height: 100px;
+    font-family: inherit;
+   
+
+}
+.form-container form button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: #006989;
+    color: #F3F7EC;
+    cursor: pointer;
+    outline: none;
+}

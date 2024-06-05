@@ -40,8 +40,16 @@ nav {
 nav ul {
     display: flex;
     gap: 20px;
+    align-items: center;
 }
+nav ul .new-btn{
+    background-color: #006989;
+    padding: 10px 20px;
+    border-radius: 6px;
+    color: #F3F7EC;
+    cursor: pointer;
 
+}
 .container {
     max-width: 1000px;
     margin: 0 auto;
